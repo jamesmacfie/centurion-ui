@@ -3,9 +3,23 @@
   "theme": "ui",
   "version": "0.4.0",
   "description": "A dark, clean theme based off the Centurion Sublime theme",
-  "repository": "https://github.com/jamesmacfie/centurion-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesmacfie/centurion-ui"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
-  }
+  },
+  "readme": "# centurion-ui theme\n\n\nA theme that very closely resembles the Centurion Sublime Text theme for Atom. All credit for the design inspiration goes to ~[Alan Hortle](https://github.com/allanhortle).\n\n![Screenshot](https://raw.github.com/jamesmacfie/centurion-ui/master/screenshot.png)\n\nCenturion was \"made out of a want for less UI and more code. It's so minimal you can barely see it. No gradients, no 1px edges and not a thousand different icon sprites.\"\n\n## To Install\n\n`apm install centurion-ui`\n\nActivated by going to the `Themes` section in the Settings view (`cmd + ,`) and selecting it from the\n`UI Themes` drop-down menu.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jamesmacfie/centurion-ui/issues"
+  },
+  "homepage": "https://github.com/jamesmacfie/centurion-ui",
+  "_id": "centurion-ui@0.4.0",
+  "dist": {
+    "shasum": "83ae6f48a2c7f07aca61aa4a785b82e6c28759c4"
+  },
+  "_from": "/Users/james/.atom/.node-gyp/.atom/.apm/centurion-ui/0.4.0/package.tgz"
 }

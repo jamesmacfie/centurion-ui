@@ -1,0 +1,486 @@
+/*
+	TODO
+			C#
+			XML
+			XSLT
+			CSHTML
+			HAML
+			JADE
+			GITIGNORE
+			GITATTRIBUTES
+			EDITORCONFIG
+			HTACCESS
+			NPMDEBUG.LOG
+			RAKEFILE
+			GEMFILE
+			RB
+			BASH
+			ZSH
+			ZSHRC
+			GULPFILE
+			HBS
+		MOUSTACHE
+			YML
+			YAML
+			CSON
+		YEOMAN
+		.GIT FODLDER
+		TODO
+
+*/
+
+.list-tree {
+
+	@import "ui-variables";
+	@import "fonts";
+
+	.centurion-icon {
+		font-family: 'icomoon';
+	}
+
+.ignore {
+
+	.icon-font:before {
+		content: "\e622";
+	}
+	.icon-grunt:before {
+		content: "\e600";
+	}
+	.icon-angles:before {
+		content: "\e601";
+	}
+	.icon-bower:before {
+		content: "\e602";
+	}
+	.icon-brackets:before {
+		content: "\e603";
+	}
+	.icon-coffee:before {
+		content: "\e604";
+	}
+	.icon-cog:before {
+		content: "\e605";
+	}
+	.icon-css_word:before {
+		content: "\e606";
+	}
+	.icon-CSS:before {
+		content: "\e607";
+	}
+	.icon-Elephant:before {
+		content: "\e608";
+	}
+	.icon-grunt-outline:before {
+		content: "\e609";
+	}
+	.icon-Gulp:before {
+		content: "\e60a";
+	}
+	.icon-hash:before {
+		content: "\e60b";
+	}
+	.icon-hbs:before {
+		content: "\e60c";
+	}
+
+	.icon-js:before {
+		content: "\e60e";
+	}
+	.icon-node:before {
+		content: "\e60f";
+	}
+	.icon-npm:before {
+		content: "\e610";
+	}
+	.icon-PHP:before {
+		content: "\e611";
+	}
+	.icon-python:before {
+		content: "\e612";
+	}
+	.icon-rails:before {
+		content: "\e613";
+	}
+	.icon-rss:before {
+		content: "\e614";
+	}
+	.icon-sass-logo-new:before {
+		content: "\e615";
+	}
+	.icon-sass-s:before {
+		content: "\e616";
+	}
+	.icon-quill:before {
+		content: "\e623";
+	}
+	.icon-camera:before {
+		content: "\e617";
+	}
+	.icon-headphones:before {
+		content: "\e618";
+	}
+	.icon-play:before {
+		content: "\e619";
+	}
+	.icon-users:before {
+		content: "\e624";
+	}
+	.icon-cogs:before {
+		content: "\e625";
+	}
+	.icon-feed:before {
+		content: "\e61a";
+	}
+	.icon-github:before {
+		content: "\e61b";
+	}
+	.icon-github2:before {
+		content: "\e61c";
+	}
+	.icon-android:before {
+		content: "\e61d";
+	}
+
+	.icon-html5:before {
+		content: "\e61f";
+	}
+	.icon-html52:before {
+		content: "\e620";
+	}
+	.icon-css3:before {
+		content: "\e621";
+	}
+	.icon-book:before {
+		content: "\f007";
+	}
+	.icon-check:before {
+		content: "\f03a";
+	}
+	.icon-database:before {
+		content: "\f096";
+	}
+	.icon-markdown:before {
+		content: "\f0c9";
+	}
+
+	.icon-tag:before {
+		content: "\f015";
+	}
+	.icon-terminal:before {
+		content: "\f0c8";
+	}
+}
+
+
+	// Defaults
+	.icon-file-text:before {
+		.centurion-icon;
+		color: @icon-default-color;
+		content: "\f007";
+		left: -1px;
+		top: 4px;
+	}
+
+	// Bower
+	.icon[data-name$=".bowerrc"]:before {
+		.centurion-icon;
+		color: @icon-bower-color;
+		content: "\e602";
+		left: -2px;
+	}
+
+	// C#
+	.icon[data-name$=".cs"]:before,
+	.icon[data-name$=".cshtml"]:before {
+		.centurion-icon;
+		content: "\e61e";
+		left: -1px;
+		top: 3px;
+	}
+
+	.icon[data-name$=".cs"]:before {
+		color: @icon-cs-color;
+	}
+
+	.icon[data-name$=".cshtml"]:before {
+		color: @icon-cshtml-color;
+	}
+
+	// CSS
+	.icon[data-name$=".css"]:before {
+		.centurion-icon;
+		color: @icon-css-color;
+		content: "\e607";
+		left: -2px;
+		top: 4px;
+	}
+
+	// CoffeeScript
+	.icon[data-name$=".coffee"]:before {
+		.centurion-icon;
+		color: @icon-coffee-color;
+		content: "\e604";
+		left: -2px;
+		top: 4px;
+	}
+
+	// Fonts
+	.icon[data-name$=".eot"]:before,
+	.icon[data-name$=".ttf"]:before,
+	.icon[data-name$=".woff"]:before {
+		.centurion-icon;
+		color: @icon-font-color;
+		content: "\e622";
+		left: -2px;
+		top: 3px;
+	}
+
+	// HTML
+	.icon[data-name$=".html"]:before,
+	.icon[data-name$=".haml"]:before,
+	.icon[data-name$=".jade"]:before {
+		.centurion-icon;
+		content: "\e60d";
+		left: -1px;
+		top: 4px;
+	}
+
+	.icon[data-name$=".html"]:before {
+		color: @icon-html-color;
+	}
+
+	.icon[data-name$=".haml"]:before {
+
+	}
+
+	.icon[data-name$=".jade"]:before {
+
+	}
+
+	// Images
+	.icon[data-name$=".png"]:before,
+	.icon[data-name$=".gif"]:before,
+	.icon[data-name$=".jpg"]:before,
+	.icon[data-name$=".jpeg"]:before,
+	.icon[data-name$=".bmp"]:before,
+	.icon[data-name$=".svg"]:before {
+		.centurion-icon;
+		content: "\e617";
+		left: -2px;
+		top: 3px;
+	}
+
+	.icon[data-name$=".bmp"]:before {
+		color: @icon-bmp-color;
+	}
+
+	.icon[data-name$=".gif"]:before {
+		color: @icon-gif-color;
+	}
+
+	.icon[data-name$=".jpg"]:before,
+	.icon[data-name$=".jpeg"]:before {
+		color: @icon-jpg-color;
+	}
+
+	.icon[data-name$=".png"]:before {
+		color: @icon-png-color;
+	}
+
+	.icon[data-name$=".svg"]:before {
+		color: @icon-svg-color;
+	}
+
+	// JS
+	.icon[data-path$=".js"]:before {
+		.centurion-icon;
+		color: @icon-js-color;
+		content: "\e60e";
+		left: -2px;
+		top: 4px;
+	}
+
+	.icon[data-name$="gruntfile.js"]:before {
+		color: @icon-grunt-color;
+		content: "\e600";
+		left: -1px;
+		top: 5px;
+	}
+
+	// JSON
+	.icon[data-path$=".json"]:before {
+		.centurion-icon;
+		color: @icon-js-color;
+		content: "\e601";
+		left: -3px;
+		top: 4px;
+	}
+
+	.icon[data-name$="bower.json"]:before {
+		color: @icon-bower-color;
+	}
+
+	// LESS
+	.icon[data-path$=".less"]:before {
+		.centurion-icon;
+		color: @icon-less-color;
+		content: "\e603";
+		left: -3px;
+		top: 4px;
+	}
+
+	// Lint files
+	.icon[data-path$=".csslint"]:before,
+	.icon[data-path$=".jslint"]:before {
+		.centurion-icon;
+		color: @icon-lint-color;
+	}
+
+	.icon[data-path$=".csslint"]:before {
+		content: "\e606";
+		left: -1px;
+		top: 5px;
+	}
+
+	.icon[data-path$=".jslint"]:before {
+		content: "\e60e";
+		left: -2px;
+		top: 4px;
+	}
+
+	// Markdown
+	.icon[data-path$=".md"]:before {
+		.centurion-icon;
+		color: @icon-markdown-color;
+		content: "\f0c9";
+		left: -2px;
+		top: 3px;
+	}
+
+	// LICENSE.md
+	.icon[data-path$="LICENSE.md"]:before {
+		.centurion-icon;
+		color: @icon-markdown-color;
+		content: "\f015";
+		left: -1px;
+		top: 4px;
+	}
+
+	// .npmignore
+	.icon[data-path=".npmignore"]:before {
+	  .centurion-icon;
+		color: @icon-npm-color;
+	  content: "\e610";
+		left: -4px;
+		top: 5px;
+	}
+
+	// package.json
+	.icon[data-path="package.json"]:before {
+		.centurion-icon;
+		color: @icon-node-color;
+		content: "\e60f";
+		left: -3px;
+		top: 4px;
+	}
+
+	// PHP
+	.icon[data-path$=".php"]:before {
+		.centurion-icon;
+		color: @icon-php-color;
+		content: "\e611";
+		left: -2px;
+		top: 4px;
+	}
+
+	// Python
+	.icon[data-path$=".py"]:before {
+		.centurion-icon;
+		color: @icon-python-color;
+		content: "\e612";
+		left: -2px;
+		top: 4px;
+	}
+
+	// SASS
+	.icon[data-path$=".sass"]:before {
+		.centurion-icon;
+		color: @icon-sass-color;
+		content: "\e616";
+		left: -2px;
+		top: 4px;
+	}
+
+	// SCSS
+	.icon[data-path$=".scss"]:before {
+		.centurion-icon;
+		color: @icon-scss-color;
+		content: "\e616";
+		left: -2px;
+		top: 4px;
+	}
+
+	// Shell
+	.icon[data-path$=".sh"]:before {
+		.centurion-icon;
+		color: @icon-shell-color;
+		content: "\f0c8";
+		left: -1px;
+		top: 3px;
+	}
+
+	// Sounds
+	.icon[data-path$=".m4a"]:before,
+	.icon[data-path$=".mp3"]:before,
+	.icon[data-path$=".wav"]:before {
+		.centurion-icon;
+		content: "\e618";
+		left: -3px;
+		top: 3px;
+	}
+
+	.icon[data-path$=".m4a"]:before {
+		color: @icon-m4a-color;
+	}
+
+	.icon[data-path$=".mp3"]:before {
+		color: @icon-mp3-color;
+	}
+
+	.icon[data-path$=".wav"]:before {
+		color: @icon-wav-color;
+	}
+
+	// Videos
+	.icon[data-path$=".avi"]:before,
+	.icon[data-path$=".mp4"]:before {
+		.centurion-icon;
+		content: "\e619";
+		left: -2px;
+		top: 3px;
+	}
+
+	.icon[data-path$=".avi"]:before {
+		color: @icon-avi-color;
+	}
+
+	.icon[data-path$=".mp4"]:before {
+		color: @icon-mp4-color;
+	}
+
+	// YAML
+	.icon[data-path$=".yml"]:before,
+	.icon[data-path$=".yaml"]:before {
+		color: @icon-yml-color;
+	}
+
+	// Zips etc
+	.icon[data-path$=".tar"]:before,
+	.icon[data-path$=".zip"]:before {
+		.centurion-icon;
+		content: "\f0c4";
+		color: @icon-zip-color;
+		left: -1px;
+		top: 3px;
+	}
+}
