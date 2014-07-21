@@ -469,7 +469,8 @@
 
 	// Shell
 	.icon[data-path$=".bash"]:before,
-	.icon[data-path$=".sh"]:before {
+	.icon[data-path$=".sh"]:before,
+	.icon[data-path$=".zshrc"]:before {
 		.centurion-icon;
 		content: "\f0c8";
 		left: -1px;
@@ -482,6 +483,9 @@
 
 	.icon[data-path$=".sh"]:before {
 		color: @icon-shell-color;
+	}
+	.icon[data-path$=".zshrc"]:before {
+		color: @icon-zsh-color;
 	}
 
 	// Sounds
