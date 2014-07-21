@@ -73,9 +73,7 @@
 	.icon-grunt-outline:before {
 		content: "\e609";
 	}
-	.icon-Gulp:before {
-		content: "\e60a";
-	}
+
 	.icon-hash:before {
 		content: "\e60b";
 	}
@@ -249,6 +247,14 @@
 		content: "\e622";
 		left: -2px;
 		top: 3px;
+	}
+
+	.icon[data-name$=".gulpfile"]:before {
+		.centurion-icon;
+		color: @icon-gulpfile-color;
+		content: "\e60a";
+		left: -2px;
+		top: 4px;
 	}
 
 	// Handlebars
