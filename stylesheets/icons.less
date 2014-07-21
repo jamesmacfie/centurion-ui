@@ -105,9 +105,7 @@
 	.icon-sass-s:before {
 		content: "\e616";
 	}
-	.icon-quill:before {
-		content: "\e623";
-	}
+
 	.icon-camera:before {
 		content: "\e617";
 	}
@@ -249,12 +247,22 @@
 		top: 3px;
 	}
 
+	// Gulp
 	.icon[data-name$=".gulpfile"]:before {
 		.centurion-icon;
 		color: @icon-gulpfile-color;
 		content: "\e60a";
 		left: -2px;
 		top: 4px;
+	}
+
+	// .htaccess
+	.icon[data-name$=".htaccess"]:before {
+		.centurion-icon;
+		color: @icon-htaccess-color;
+		content: "\e623";
+		left: -1px;
+		top: 3px;
 	}
 
 	// Handlebars
