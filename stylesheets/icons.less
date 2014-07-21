@@ -79,9 +79,6 @@
 	.icon-hash:before {
 		content: "\e60b";
 	}
-	.icon-hbs:before {
-		content: "\e60c";
-	}
 
 	.icon-js:before {
 		content: "\e60e";
@@ -235,6 +232,23 @@
 		top: 3px;
 	}
 
+	// Handlebars
+	.icon[data-name$=".hbs"]:before,
+	.icon[data-name$=".mustache"]:before {
+		.centurion-icon;
+		content: "\e60c";
+		left: -3px;
+		top: 4px;
+	}
+
+	.icon[data-name$=".hbs"]:before {
+		color: @icon-hbs-color;
+	}
+
+	.icon[data-name$=".mustache"]:before {
+		color: @icon-mustache-color;
+	}
+
 	// HTML
 	.icon[data-name$=".html"]:before,
 	.icon[data-name$=".haml"]:before,
@@ -250,11 +264,11 @@
 	}
 
 	.icon[data-name$=".haml"]:before {
-
+		color: @icon-haml-color;
 	}
 
 	.icon[data-name$=".jade"]:before {
-
+		color: @icon-jade-color;
 	}
 
 	// Images
@@ -421,12 +435,20 @@
 	}
 
 	// Shell
+	.icon[data-path$=".bash"]:before,
 	.icon[data-path$=".sh"]:before {
 		.centurion-icon;
-		color: @icon-shell-color;
 		content: "\f0c8";
 		left: -1px;
 		top: 3px;
+	}
+
+	.icon[data-path$=".bash"]:before {
+		color: @icon-bash-color;
+	}
+
+	.icon[data-path$=".sh"]:before {
+		color: @icon-shell-color;
 	}
 
 	// Sounds
@@ -449,6 +471,11 @@
 
 	.icon[data-path$=".wav"]:before {
 		color: @icon-wav-color;
+	}
+
+	// .txt
+	.icon[data-path$=".txt"]:before {
+		color: @icon-txt-color;
 	}
 
 	// Videos
