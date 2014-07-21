@@ -122,9 +122,7 @@
 	.icon-users:before {
 		content: "\e624";
 	}
-	.icon-cogs:before {
-		content: "\e625";
-	}
+
 	.icon-feed:before {
 		content: "\e61a";
 	}
@@ -176,6 +174,27 @@
 		content: "\f007";
 		left: -1px;
 		top: 4px;
+	}
+
+	// .settings
+	.icon[data-name$=".editorconfig"]:before,
+	.icon[data-name$=".gitattributes"]:before,
+	.icon[data-name$=".gitignore"]:before {
+		content: "\e625";
+		left: -1px;
+		top: 4px;
+	}
+
+	.icon[data-name$=".editorconfig"]:before {
+		color: @icon-editorconfig-color;
+	}
+
+	.icon[data-name$=".gitattributes"]:before {
+		color: @icon-gitattributes-color;
+	}
+
+	.icon[data-name$=".gitignore"]:before {
+		color: @icon-gitignore-color;
 	}
 
 	// Bower
