@@ -144,9 +144,7 @@
 	.icon-book:before {
 		content: "\f007";
 	}
-	.icon-check:before {
-		content: "\f03a";
-	}
+
 	.icon-database:before {
 		content: "\f096";
 	}
@@ -508,6 +506,15 @@
 
 	.icon[data-path$=".wav"]:before {
 		color: @icon-wav-color;
+	}
+
+	// Todo
+	.icon[data-path$=".todo"]:before {
+		.centurion-icon;
+		content: "\f03a";
+		color: @icon-todo-color;
+		left: 0px;
+		top: 3px;
 	}
 
 	// .txt
