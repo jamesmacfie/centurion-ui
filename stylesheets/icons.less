@@ -46,9 +46,7 @@
 	.icon-grunt:before {
 		content: "\e600";
 	}
-	.icon-angles:before {
-		content: "\e601";
-	}
+
 	.icon-bower:before {
 		content: "\e602";
 	}
@@ -408,13 +406,21 @@
 		top: 4px;
 	}
 
-	// .npmignore
-	.icon[data-path=".npmignore"]:before {
+	// NPM
+	.icon[data-path$=".npmignore"]:before,
+	.icon[data-path$="npm_debug.log"]:before {
 	  .centurion-icon;
-		color: @icon-npm-color;
 	  content: "\e610";
 		left: -4px;
 		top: 5px;
+	}
+
+	.icon[data-path$=".npmignore"]:before {
+		color: @icon-npm-color;
+	}
+
+	.icon[data-path$="npm_debug.log"]:before {
+		color: @icon-npm-debug-color;
 	}
 
 	// package.json
@@ -547,6 +553,23 @@
 
 	.icon[data-path$=".mp4"]:before {
 		color: @icon-mp4-color;
+	}
+
+	// XML
+	.icon[data-path$=".xml"]:before,
+	.icon[data-path$=".xslt"]:before {
+		.centurion-icon;
+		content: "\e601";
+		left: -3px;
+		top: 4px;
+	}
+
+	.icon[data-path$=".xml"]:before {
+		color: @icon-xml-color;
+	}
+
+	.icon[data-path$=".xslt"]:before {
+		color: @icon-xslt-color;
 	}
 
 	// YAML
