@@ -186,14 +186,6 @@
 		color: @icon-gitignore-color;
 	}
 
-	// Bower
-	.icon[data-name$=".bowerrc"]:before {
-		.centurion-icon;
-		color: @icon-bower-color;
-		content: "\e602";
-		left: -2px;
-	}
-
 	// C#
 	.icon[data-name$=".cs"]:before,
 	.icon[data-name$=".cshtml"]:before {
@@ -227,6 +219,39 @@
 		content: "\e604";
 		left: -2px;
 		top: 4px;
+	}
+
+	// Data
+	.icon[data-name$=".cson"]:before,
+	.icon[data-name$=".json"]:before {
+		.centurion-icon;
+		content: "\f096";
+		left: -0px;
+		top: 4px;
+	}
+
+	.icon[data-name$=".cson"]:before {
+		color: @icon-cson-color;
+	}
+
+	.icon[data-name$=".json"]:before {
+		color: @icon-json-color;
+	}
+
+	// Bower
+	.icon[data-name$=".bowerrc"]:before,
+	.icon[data-name$="bower.json"]:before {
+		.centurion-icon;
+		content: "\e602";
+		left: -2px;
+	}
+
+	.icon[data-name$=".bowerrc"]:before {
+		color: @icon-bower-color;
+	}
+
+	.icon[data-name$="bower.json"]:before {
+		color: @icon-bower-color;
 	}
 
 	// Fonts
@@ -347,19 +372,6 @@
 		top: 5px;
 	}
 
-	// JSON
-	.icon[data-path$=".json"]:before {
-		.centurion-icon;
-		color: @icon-js-color;
-		content: "\e601";
-		left: -3px;
-		top: 4px;
-	}
-
-	.icon[data-name$="bower.json"]:before {
-		color: @icon-bower-color;
-	}
-
 	// LESS
 	.icon[data-path$=".less"]:before {
 		.centurion-icon;
@@ -458,7 +470,6 @@
 		left: -2px;
 		top: 4px;
 	}
-
 
 	// SASS
 	.icon[data-path$=".sass"]:before {
